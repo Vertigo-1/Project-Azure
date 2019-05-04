@@ -1,0 +1,211 @@
+<!-- link to CSS stylesheet -->
+<link rel="stylesheet" href="/css/events.css">
+{{!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="/"><img src="/images/GreenUp_icon.jpg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/events">Get Involved<span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="/news">Get Informed</a>
+            <a href="/login" class="nav-item nav-link">Login</a>
+            <a href="/register" class="nav-item nav-link">Sign Up</a>
+        </div>
+</nav> --}}
+<div id="title-container">
+    <h1 id="page-title">GET INVOLVED</h1>
+</div>
+<section class="my-5">
+    <div class="container containerCustom cardsCustom">
+        <div class="row">
+            <div class="col-3">
+                <!-- Card -->
+                <div class="card">
+                    <!-- Card image -->
+                    <div>
+                        {{!-- <img class="card-img-top"
+                            src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                            alt="Card image cap">
+                        <a href="#!"> --}}
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title green-text">Learn</h4>
+                        <!-- Text -->
+                        <p class="card-text">Add to your knowledge and get acquainted with the latest laws and regs to
+                            negatively impact the climate
+                        </p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-dark-green">Get Involved</a>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+            <div class="col-3">
+                <!-- Card -->
+                <div class="card">
+                    <!-- Card image -->
+                    <div>
+                        {{!-- <img class="card-img-top"
+                            src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                            alt="Card image cap">
+                        <a href="#!"> --}}
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title green-text">Movements</h4>
+                        <!-- Text -->
+                        <p class="card-text"> Join a coordinated group action focused on the legalities and social
+                            impact on our environment and climate change.</p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-dark-green">Get Involved</a>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+            <div class="col-3">
+                <!-- Card -->
+                <div class="card">
+                    <!-- Card image -->
+                    <div>
+                        {{!-- <img class="card-img-top"
+                            src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                            alt="Card image cap">
+                        <a href="#!"> --}}
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title green-text">Social</h4>
+                        <!-- Text -->
+                        <p class="card-text">Join a social event to facilitate the creation and sharing of ideas, career
+                            interests and other forms of expression.</p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-dark-green">Get Involved</a>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+            <div class="col-3">
+                <!-- Card -->
+                <div class="card">
+                    <!-- Card image -->
+                    <div>
+                        {{!-- <img class="card-img-top"
+                            src="https://mdbootstrap.com/img/Mockups/Lightbox/Thumbnail/img%20(67).jpg"
+                            alt="Card image cap">
+                        <a href="#!"> --}}
+                        <div class="mask rgba-white-slight"></div>
+                        </a>
+                    </div>
+                    <!-- Card content -->
+                    <div class="card-body">
+                        <!-- Title -->
+                        <h4 class="card-title green-text">Communicate</h4>
+                        <!-- Text -->
+                        <p class="card-text">Express yourself on GreenUps board where your voice is encouraged as well
+                            as your manners.</p>
+                        <!-- Button -->
+                        <a href="#" class="btn btn-dark-green">Get Involved</a>
+                    </div>
+                </div>
+                <!-- Card -->
+            </div>
+        </div>
+        <br>
+        <div class="event-container">
+            <div class="row">
+                <div class="col-12">
+                    <h2>GreenUp Events</h2>
+                    <table class="table">
+                        <thead class="default-color-dark mdb-color white-text">
+                            <tr>
+                                <th scope="col">Category</th>
+                                <th scope="col">Event Name</th>
+                                <th scope="col">Event Date/Time</th>
+                                <th scope="col">Event Location</th>
+                                <th scope="col"># of Participants</th>
+                                <th scope="col">Description</th>
+                                <th scope="col">Creator</th>
+                            </tr>
+                        </thead>
+                        <tbody id="event-body">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                        data-whatever="add">Add Event</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Add Event</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                        <label for="event-name" class="col-form-label">Event Name</label>
+                        <input type="text" class="form-control" id="event-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-date" class="col-form-label">Event Date/Time</label>
+                        <input type="datetime-local" class="form-control" id="event-date">
+                    </div>
+                    <div class="form-group">
+                        <label for="event-location" class="col-form-label">Location</label>
+                        <input type="text" class="form-control" id="event-location">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Category</label>
+                        <select class="form-control" id="categories">
+                            <option>Issues</option>
+                            <option>Movements</option>
+                            <option>Social</option>
+                            <option>Educational</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message-text" class="col-form-label">Event Description:</label>
+                        <textarea class="form-control" id="event-description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" id="add-btn">Add Event</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- link to Events javascript file -->
+<script src="js/events.js" type="text/javascript"></script>
